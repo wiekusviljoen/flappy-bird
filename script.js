@@ -18,7 +18,7 @@ var elem = document.getElementById("bird");
 setInterval(() => {
   var x = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (x <= 510) {
-    elem.style.top = x + 0 + "px";
+    elem.style.top = x + +"px";
   } else {
     alert("You Lost !! your score is: " + score);
     elem.style.top = 100 + "px";
@@ -31,7 +31,7 @@ setInterval(() => {
 function jump() {
   var fly = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (fly >= 14) {
-    elem.style.top = fly - 40 + "px";
+    elem.style.top = fly - 10 + "px";
   }
 }
 
@@ -44,7 +44,7 @@ document.addEventListener("keydown", (event) => {
 function fall() {
   var fly = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (fly >= 14) {
-    elem.style.top = fly + 40 + "px";
+    elem.style.top = fly + 10 + "px";
   }
 }
 
