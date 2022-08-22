@@ -18,7 +18,7 @@ var elem = document.getElementById("bird");
 setInterval(() => {
   var x = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (x <= 510) {
-    elem.style.top = x + +"px";
+    elem.style.top = x + 1 + "px";
   } else {
     alert("You Lost !! your score is: " + score);
     elem.style.top = 100 + "px";
@@ -41,6 +41,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+//fall functionality
 function fall() {
   var fly = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (fly >= 14) {
