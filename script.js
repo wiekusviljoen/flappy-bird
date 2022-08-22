@@ -1,4 +1,3 @@
-var pipe1_hg;
 var hole1_hg;
 var pipe2_hg;
 
@@ -31,7 +30,7 @@ setInterval(() => {
 function jump() {
   var fly = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (fly >= 14) {
-    elem.style.top = fly - 10 + "px";
+    elem.style.top = fly - 5 + "px";
   }
 }
 
@@ -45,7 +44,7 @@ document.addEventListener("keydown", (event) => {
 function fall() {
   var fly = parseInt(window.getComputedStyle(elem).getPropertyValue("top"));
   if (fly >= 14) {
-    elem.style.top = fly + 10 + "px";
+    elem.style.top = fly + 5 + "px";
   }
 }
 
